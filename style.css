@@ -4,34 +4,100 @@
      box-sizing: border-box; /* IE */
 }
 
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
 body {
 	font-family: 'Lato', sans-serif;
 	background: white;
 	font-weight: 300;
 	font-size: 12pt;
 	color: #BBB;
-	margin:40px;
+	margin: 0 auto;
 	padding: 10px;
-	border left: 5px solid #DDD;
-	max-width: 50em;
+	/*border left: 5px solid #DDD;*/
 
 }
 
 /*layout*/
 
+header {
+	width: 100%;
+}
+
+main {
+	width: 65%;
+	margin-right: 5%;
+}
+
+aside {
+	width: 30%;
+	margin-top: 50px;
+}
+
+main, aside {
+	float: left;
+	/*display: inline-block;*/
+}
+
+footer {
+	clear:both;
+	width: 100%;
+}
+
+header h1 {
+	display: inline-block;
+	color: #D00;
+	font-weight: 400;
+}
+
+header h2 {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+/*links*/
+header nav a {
+	background-color: black;
+	text-align: center;
+	padding:20px;
+	width: 16.6666%;
+	display: block;
+	float: left;
+	color: #DDD;
+	font-size: 12pt;
+	text-decoration: underline;
+}
 
 /*content*/
 
 img {
 	max-width: 100%;
-	display: block;
 	margin: 10px, 0;
 
 }
-h1 {
-	color: #D00;
-	font-weight: 400;
-}
+
 
 h2 {
 	color:#444;
@@ -72,18 +138,12 @@ article p::first-letter {
 a {
 	color:#D00;
 	text-decoration: none;
+	text-align: center;
 }
 
 a:hover {
 	color: #A00;
 
-}
-
-header nav a {
-	color: #DDD;
-	font-size: 12pt;
-	padding-right: 5px;
-	text-decoration: underline;
 }
 
 article h2 a {
@@ -94,6 +154,10 @@ article h2 a {
 footer nav a {
 	font-size: 6pt
 	margin-top: 30px;
+}
+
+aside p {
+	margin-right: 10%;
 }
 
 
