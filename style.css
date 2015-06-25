@@ -103,6 +103,12 @@ aside img {
 	border-bottom-color: #EEE;
 }
 
+aside p {
+	margin-right: 10%;
+	bottom-border: 1px solid;
+	border-bottom-color: #EEE;
+
+}
 
 h2 {
 	color:#444;
@@ -161,12 +167,7 @@ footer nav a {
 	margin-top: 30px;
 }
 
-aside p {
-	margin-right: 10%;
-	bottom-border: 1px solid;
-	border-bottom-color: #EEE;
 
-}
 
 
 
