@@ -98,6 +98,11 @@ img {
 
 }
 
+aside img {
+	bottom-border: 1px solid;
+	border-bottom-color: #EEE;
+}
+
 
 h2 {
 	color:#444;
@@ -158,6 +163,9 @@ footer nav a {
 
 aside p {
 	margin-right: 10%;
+	bottom-border: 1px solid;
+	border-bottom-color: #EEE;
+
 }
 
 
